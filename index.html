@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rheumatology Conference 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+
+        .page-break {
+            page-break-before: always;
+        }
+
+        .cover-page {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('./erbil.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            color: white;
+        }
+
+        .agenda-page {
+            background-color: #fafafa;
+        }
+
+        @media print {
+            .agenda-page {
+                background-color: white;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .time-slot {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .time-block {
+                width: 100%;
+                border-bottom: 1px dashed #cbd5e0;
+                padding-bottom: 0.5rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="text-gray-900 font-sans bg-gray-50">
+    <!-- Cover Page -->
+    <section class="cover-page flex flex-col justify-center items-center text-center p-4">
+        <div class="bg-white/20 backdrop-blur-sm p-8 rounded-lg shadow-xl">
+            <img src="./association.svg" alt="Conference Logo" class="w-40 h-40 mb-6 mx-auto">
+            <h1 class="text-3xl md:text-4xl font-bold mb-6 max-w-3xl">4th International Conference of the Association of
+                Rheumatology
+                and Medical Rehabilitation in Kurdistan Region-Iraq 2025</h1>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-8">
+                <p class="text-xl flex items-center"><i class="fas fa-calendar-alt mr-2"></i> 7–9th May, 2025</p>
+                <p class="text-xl flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> Grand Millennium Hotel,
+                    Sulaimani, Kurdistan-Iraq</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agenda Page - Day One -->
+    <section class="agenda-page page-break p-4 md:p-8 max-w-5xl mx-auto">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2
+                class="text-2xl md:text-3xl font-bold mb-6 text-blue-800 border-b-2 border-blue-300 pb-2 flex items-center">
+                <i class="fas fa-calendar-day mr-3"></i> Day One - 7th May 2025
+            </h2>
+
+            <div class="space-y-8">
+                <div
+                    class="time-slot flex gap-3 md:gap-6 items-start p-3 rounded-lg hover:bg-blue-50 transition-colors">
+                    <div class="time-block w-32 font-semibold text-blue-700 bg-blue-100 p-2 rounded-lg text-center">7:30
+                        - 8:30</div>
+                    <div class="flex-1">Registration, Welcome and Greetings</div>
+                </div>
+
+                <div class="border-l-4 border-blue-500 pl-4 bg-blue-50 p-4 rounded-r-lg">
+                    <h3 class="text-xl font-bold mb-2 text-blue-700">Session One: Inflammatory Arthritis</h3>
+                    <p class="font-medium mb-4 text-blue-600">
+                        <i class="fas fa-user-md mr-1"></i> Chairmen: Dr. Rauf Rahim Mirza, Dr. Srushit Abdulkarim, Dr.
+                        Narin Kamaran
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="time-slot flex gap-3 md:gap-6 p-2 rounded hover:bg-blue-100 transition-colors">
+                            <div class="time-block w-32 font-semibold text-blue-700">8:30 - 8:45</div>
+                            <div class="flex-1">Pitfalls and Pearls in Diagnosing Inflammatory Arthritis - <span
+                                    class="font-medium text-blue-800">Dr. Sami Salman</span></div>
+                        </div>
+                        <div class="time-slot flex gap-3 md:gap-6 p-2 rounded hover:bg-blue-100 transition-colors">
+                            <div class="time-block w-32 font-semibold text-blue-700">8:45 - 9:00</div>
+                            <div class="flex-1">Seronegative RA Insights and Clinical Challenges - <span
+                                    class="font-medium text-blue-800">Dr. Niaz Albarzanji</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="time-slot flex gap-3 md:gap-6 items-start bg-yellow-100 p-4 rounded-lg shadow-sm border border-yellow-200">
+                    <div class="time-block w-32 font-semibold text-yellow-800 bg-yellow-200 p-2 rounded text-center">
+                        9:30 - 9:50</div>
+                    <div class="flex-1">
+                        <span class="font-bold text-yellow-700 block mb-1">Sponsored Lecture:
+                            Boehringer-Ingelheim</span>
+                        <span class="text-yellow-800 font-medium">Dr. Shwan Kader Media</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agenda Page - Day Two -->
+    <section class="agenda-page page-break p-4 md:p-8 max-w-5xl mx-auto">
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2
+                class="text-2xl md:text-3xl font-bold mb-6 text-green-800 border-b-2 border-green-300 pb-2 flex items-center">
+                <i class="fas fa-calendar-day mr-3"></i> Day Two - 8th May 2025
+            </h2>
+
+            <div class="space-y-8">
+                <div class="border-l-4 border-green-500 pl-4 bg-green-50 p-4 rounded-r-lg">
+                    <h3 class="text-xl font-bold mb-2 text-green-700">Session Five: Degenerative & Osteoporosis</h3>
+                    <p class="font-medium mb-4 text-green-600">
+                        <i class="fas fa-user-md mr-1"></i> Chairmen: Dr. Nizar Abdullatif, Dr. Adnan Obaid
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="time-slot flex gap-3 md:gap-6 p-2 rounded hover:bg-green-100 transition-colors">
+                            <div class="time-block w-32 font-semibold text-green-700">8:45 - 9:00</div>
+                            <div class="flex-1">Pregnancy & Lactation Associated Osteoporosis - <span
+                                    class="font-medium text-green-800">Dr. Taha Qaradaghi & Dr. Sawen Mohammad
+                                    Ahmed</span></div>
+                        </div>
+                        <div class="time-slot flex gap-3 md:gap-6 p-2 rounded hover:bg-green-100 transition-colors">
+                            <div class="time-block w-32 font-semibold text-green-700">9:00 - 9:15</div>
+                            <div class="flex-1">Role of IA Injection in Treating OA Knee According to New Guidelines -
+                                <span class="font-medium text-green-800">Dr. Dilkhaz Hussein Mohammed</span></div>
+                        </div>
+                        <div class="time-slot flex gap-3 md:gap-6 p-2 rounded hover:bg-green-100 transition-colors">
+                            <div class="time-block w-32 font-semibold text-green-700">9:15 - 9:30</div>
+                            <div class="flex-1">Osteoporosis & Heart Diseases: A Two Way Street - <span
+                                    class="font-medium text-green-800">Dr. Aryan Mohamadfatih Jalal</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="time-slot flex gap-3 md:gap-6 items-start bg-yellow-100 p-4 rounded-lg shadow-sm border border-yellow-200">
+                    <div class="time-block w-32 font-semibold text-yellow-800 bg-yellow-200 p-2 rounded text-center">
+                        9:30 - 9:50</div>
+                    <div class="flex-1">
+                        <span class="font-bold text-yellow-700 block mb-1">Sponsored Lecture:
+                            Boehringer-Ingelheim</span>
+                        <span class="text-yellow-800 font-medium">Dr. Shwan Kader Media</span>
+                    </div>
+                </div>
+
+                <div class="time-slot flex gap-3 md:gap-6 items-start bg-gray-100 p-4 rounded-lg">
+                    <div class="time-block w-32 font-semibold text-gray-700 bg-gray-200 p-2 rounded text-center">10:00 -
+                        10:30</div>
+                    <div class="flex-1 flex items-center">
+                        <i class="fas fa-coffee mr-2 text-gray-600"></i>
+                        <span class="font-medium">Coffee Break</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-6 text-center text-sm text-gray-600 mt-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="border-t pt-4">
+                <p class="mb-2">The Association of Rheumatology and Medical Rehabilitation in KRG</p>
+                <div class="flex justify-center space-x-4 mt-3">
+                    <a href="#" class="text-blue-500 hover:text-blue-700"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-blue-400 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-pink-500 hover:text-pink-700"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-blue-700 hover:text-blue-900"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p class="mt-4 text-xs">&copy; 2025 All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
